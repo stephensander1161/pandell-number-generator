@@ -25,15 +25,15 @@ function shuffle(array) {
 }
 
 var i = 0;
-var test = [];
+var arr = [];
 app.get('/', (req, res) => {
 	while (i < 10001) {
-		test.push(i);
+		arr.push(i);
 		i++;
 	}
 
-	shuffle(test);
-	x = test.toString();
+	shuffle(arr);
+	x = arr.toString();
 	console.log(x);
 	res.json({ message: `${x}` });
 });
