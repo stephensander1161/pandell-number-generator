@@ -33,9 +33,9 @@ app.get('/', (req, res) => {
 	}
 
 	shuffle(arr);
-	x = arr.toString();
-	console.log(x);
-	res.json({ message: `${x}` });
+	setOfNumbers = arr.toString();
+	console.log(setOfNumbers);
+	res.json({ message: `${setOfNumbers}` });
 });
 
 const PORT = process.env.PORT || 4000;
